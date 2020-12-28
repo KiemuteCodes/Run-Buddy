@@ -1,8 +1,9 @@
-# Run Buddy Inc.
+# Run Buddy, Inc
+
 ## Purpose
 A website that offers fitness training services
 
-## Built with
+## Built With
 *HTML
 *CSS
 
@@ -10,4 +11,6 @@ A website that offers fitness training services
 https://kiemutecodes.github.io/run-buddy/
 
 ## Contribution
-Made with ❤️ by Samuel Rotua
+Made with ❤️ by Kiemute
+
+### ©️2019 Run Buddy, Inc  
