@@ -349,7 +349,19 @@ background: #024e76;
 .service-grid-item.basic {
     grid-column: 2/span 1;
 }
-
+.service-grid-item.subscription {
+    grid-column: 2/span 2;
+}
+.service-grid-item.cancel {
+    writing-mode: vertical-lr;
+    grid-column: 1;
+    transform: rotate(180deg);
+    grid-row: 1/ -1;
+}
+.grid-head, .grid-price, .service-grid-item.cancel {
+    font-size: 1.5rem;
+    font-weight :bold;
+}
 /* Media query for smaller desktop screens and smaller */
 @media screen and (max-width: 980px) {
    
@@ -421,7 +433,23 @@ hero-cta, .hero-form {
         .step-text {
             flex: 100%;
         }
+    
+    .service-grid-container {
+      grid-template-columns: 1fr 1fr;  
     }
+    .service-grid-item.basic {
+        grid-column: 1;
+    }
+    .service-grid-item.subscription {
+        grid-column: 1/ -1;
+    }
+    .service-grid-item.cancel {
+        transform: none;
+        writing-mode: unset;
+        grid-column: 1 / -1;
+        grid-row: -1;
+    }
+}
         /*this will be applied on any screen between 768px and 575px */
         
 @media screen and (max-width: 575px)
